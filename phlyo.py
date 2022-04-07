@@ -10,6 +10,7 @@ align = AlignIO.read('msa.phy','phylip')
 # Calculate the distance matrix
 calculator = DistanceCalculator('identity')
 distMatrix = calculator.get_distance(align)
+print(type(distMatrix))
 
 # Creating a DistanceTreeConstructor object
 constructor = DistanceTreeConstructor()
